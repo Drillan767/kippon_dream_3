@@ -8,6 +8,10 @@ use JavaScript;
 
 class BlogController extends Controller
 {
+    public function admin() {
+        return view('admin.blog.index');
+    }
+
     public function visitors() {
         JavaScript::put([
            'testvar' => 'truc'

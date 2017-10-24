@@ -1,19 +1,19 @@
-
 /**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
+ * Liste des variables définies par Javascript :
+ * - testvar
  */
 
-require('./bootstrap');
+import './bootstrap'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import router from './router';
 
-window.Vue = require('vue');
-
+Vue.use(VueRouter);
 Vue.component('example', require('./components/Example.vue'));
 Vue.component('navbar', require('./components/Navbar.vue'));
 Vue.component('blog_index', require('./components/blog/index.vue'));
-console.log(testvar);
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    router
 });

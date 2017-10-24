@@ -1,11 +1,14 @@
 <template>
-    <h2>Bonjour ici le bloooog</h2>
+    <div>
+        <h1>Blog index</h1>
+        <router-link :to="{ name: 'blog-new' }">Nouveau</router-link>
+    </div>
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Navbar chargée')
-        }
-    }
+   export default {
+       mounted() {
+           console.log('ouais');
+       }
+   }
 </script>
